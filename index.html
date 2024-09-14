@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newmenusorshe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://imgmedia.lbb.in/media/2019/10/5daf295896edf48a0b9dd3d5_1571760472347.jpg" type="image/x-icon">
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleNav()">☰</button>
+
+  <div id="sideNav" class="side-nav">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Overlay that will appear when the sideNav is open -->
+  <div id="overlay" class="overlay" onclick="closeNavOutside(event)"></div>
+
+  <!-- --------------------------------------------------------------------------------- -->
+  <h1 class="menunewupdate">MENU</h1>
+
+   <div class="gallery">
+
+     <a href="page1.html">
+       <img
+       src="https://imgmedia.lbb.in/media/2019/10/5daf295896edf48a0b9dd3d5_1571760472347.jpg"
+       alt="cat-sleeping"
+     />
+     </a>
+    
+     <a href="page2.html">
+       <img
+       src="https://imgmedia.lbb.in/media/2019/10/5daf295896edf48a0b9dd3d5_1571760472347.jpg"
+       alt="cat-sleeping"
+     />
+     </a>
+
+     <a href="page3.html">
+       <img
+       src="https://imgmedia.lbb.in/media/2019/10/5daf295896edf48a0b9dd3d5_1571760472347.jpg"
+       alt="cat-sleeping"
+     />
+     </a>
+
+     <a href="page4.html">
+       <img
+       src="https://imgmedia.lbb.in/media/2019/10/5daf295896edf48a0b9dd3d5_1571760472347.jpg"
+       alt="cat-sleeping"
+     />
+     </a>
+
+     <a href="page5.html">
+       <img
+       src="https://imgmedia.lbb.in/media/2019/10/5daf295896edf48a0b9dd3d5_1571760472347.jpg"
+       alt="cat-sleeping"
+     />
+     </a>
+   </div>
+   <!-- -------------------------About Us--------------------------------------- -->
+    <div class="aboutus">
+      <h1 class="menunewupdate">ABOUT US</h1>
+      <p class="weltopro">Welcome to the Prost! Experience an electrifying nightlife at one of the finest breweries in Hyderabad! A perfect place to spend an evening full of fun, sparkling drinks and endless conversations. Hangout with your folks & taste scrumptious Italian, 
+        Continental & Chinese delicacies with live sport screening & rocking party music! </p>
+
+        <div class="socailim">
+          <img class="fbim" src="images/follinsta.jpeg" alt="">
+          <img class="fbim" src="images/fbfoll.jpeg" alt="">
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------ -->
+     <div class="gallerysection">
+        <h1 class="menunewupdate">Gallery</h1>
+
+        <!-- --------------------------------------------- -->
+        <div class="gallery">
+          <div class="gallery-item" onclick="openLightbox();currentSlide(1)">
+            <img src="images/RAJ_5854.JPG" alt="Menu Item 1">
+          </div>
+          <div class="gallery-item" onclick="openLightbox();currentSlide(2)">
+            <img src="images/RAJ_5871.JPG" alt="Menu Item 2">
+          </div>
+          <div class="gallery-item" onclick="openLightbox();currentSlide(3)">
+            <img src="images/RAJ_5877.JPG" alt="Menu Item 3">
+          </div>
+          <div class="gallery-item" onclick="openLightbox();currentSlide(4)">
+            <img src="images/RAJ_5895.JPG" alt="Menu Item 4">
+          </div>
+          <div class="gallery-item" onclick="openLightbox();currentSlide(5)">
+            <img src="images/RAJ_5898.JPG" alt="Menu Item 5">
+          </div>
+          <div class="gallery-item" onclick="openLightbox();currentSlide(6)">
+            <img src="images/RAJ_5920.JPG" alt="Menu Item 6">
+          </div>
+          <div class="gallery-item" onclick="openLightbox();currentSlide(7)">
+            <img src="images/RAJ_5937.JPG" alt="Menu Item 7">
+          </div>
+          <div class="gallery-item" onclick="openLightbox();currentSlide(8)">
+            <img src="images/RAJ_5941.JPG" alt="Menu Item 8">
+          </div>
+          <div class="gallery-item" onclick="openLightbox();currentSlide(9)">
+            <img src="images/RAJ_5944.JPG" alt="Menu Item 9">
+          </div>
+        </div>
+        
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+          <span class="close" onclick="closeLightbox()">&times;</span>
+          <div class="lightbox-content">
+            <div class="slide">
+              <img src="images/RAJ_5854.JPG" alt="Menu Item 1">
+              <span class="close" onclick="closeLightbox()">&times;</span>
+            </div>
+      
+            <div class="slide">
+              <img src="images/RAJ_5871.JPG" alt="Menu Item 2">
+              <span class="close" onclick="closeLightbox()">&times;</span>
+            </div>
+            
+            <div class="slide">
+              <img src="images/RAJ_5877.JPG" alt="Menu Item 2">
+              <span class="close" onclick="closeLightbox()">&times;</span>
+            </div>
+      
+            <div class="slide">
+              <img src="images/RAJ_5895.JPG" alt="Menu Item 2">
+              <span class="close" onclick="closeLightbox()">&times;</span>
+            </div>
+      
+            <div class="slide">
+              <img src="images/RAJ_5898.JPG" alt="Menu Item 2">
+              <span class="close" onclick="closeLightbox()">&times;</span>
+            </div>
+      
+            <div class="slide">
+              <img src="images/RAJ_5920.JPG" alt="Menu Item 2">
+              <span class="close" onclick="closeLightbox()">&times;</span>
+            </div>
+      
+            <div class="slide">
+              <img src="images/RAJ_5937.JPG" alt="Menu Item 2">
+              <span class="close" onclick="closeLightbox()">&times;</span>
+            </div>
+      
+            <div class="slide">
+              <img src="images/RAJ_5941.JPG" alt="Menu Item 2">
+              <span class="close" onclick="closeLightbox()">&times;</span>
+            </div>
+      
+            <div class="slide">
+              <img src="images/RAJ_5944.JPG" alt="Menu Item 2">
+              <span class="close" onclick="closeLightbox()">&times;</span>
+            </div>
+      
+            <!-- Add more slides for other images -->
+          </div>
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+
+
+
+
+        <!-- ---------------- -->
+
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="script.js"></script>
+
+</body>
+</html>
