@@ -16,7 +16,7 @@ body {
   font-family: Arial, sans-serif;
   padding: 0;
   margin: 0;
-  height: 2000px; /* For scrolling demo */
+  /* height: 2000px; For scrolling demo */
 }
 
 /* Main horizontal navbar */
@@ -26,7 +26,7 @@ body {
   width: 100%;
   background-color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 10px 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a nice look */
@@ -36,20 +36,30 @@ body {
 /* Toggle button */
 .toggle-btn {
   color: #000;
-  font-size: 24px;
+  font-size: 30px;
   cursor: pointer;
 }
 
 /* Logo on the right */
 .logo {
   color: white;
-  font-size: 18px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
 }
-
+.srfe{
+  margin-left: 10px;
+}
+/* ----------------------------- */
+.lgnae{
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
 /* Side navigation (initially hidden) */
 .side-nav {
+  font-family: "Open Sans", sans-serif;
   height: 100%;
   width: 0;
   position: fixed;
@@ -58,12 +68,24 @@ body {
   background-color: #fff;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px; /* Push content below the sticky navbar */
+  padding-top: 10px; /* Push content below the sticky navbar */
   z-index: 1500;
+}
+.hdm{
+  font-weight: 600;
+  padding: 10px 15px;
+}
+
+.listfoodes{
+ font-weight: 500;
+ padding-top: 10px;
+ padding-left: 30px;
+ padding-bottom: 6px;
+ letter-spacing: .7px;
 }
 
 .side-nav a {
-  padding: 10px 15px;
+  font-family: "Open Sans", sans-serif;
   text-decoration: none;
   font-size: 18px;
   color: #000;
@@ -71,9 +93,6 @@ body {
   transition: 0.3s;
 }
 
-.side-nav a:hover {
-  background-color: #555;
-}
 
 /* Close button for side menu */
 .side-nav .close-btn {
@@ -97,14 +116,49 @@ body {
   z-index: 1000;
 }
 
+/* --------------------------------------------------- */
+.delissgif{
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  background-image: url('https://media.istockphoto.com/id/481746542/photo/seamless-high-detiled-very-light-handmade-paper-with-visible-structure.jpg?s=612x612&w=0&k=20&c=VMeXTU1vLEb43YJgoi_9RRHOwnYQIXfF8D9n_FH5OcI=');
+}
+.firsgmadsei{
+  height: 600px;
+}
+
+.imgsrpro{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+}
+.swiggi , .zomato {
+  width: 300px;
+}
+
 /* Responsive behavior */
 @media (max-width: 768px) {
   .toggle-btn {
-      font-size: 20px;
+      font-size: 30px;
   }
-
-  .logo {
-      font-size: 16px;
+}
+@media screen and (max-width: 600px){
+  .zomato,.swiggi{
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 500px){
+  .imgsrpro{
+    flex-direction: column;
+    object-fit: cover;
+    align-items: center;
+  }
+  .firsgmadsei{
+    width: 350px;
   }
 }
 /* ------------------------------- */
@@ -112,7 +166,7 @@ body {
 .menunewupdate{
     font-family: "Syne", sans-serif;
     font-size: 50px;
-    padding: 50px 0;
+    padding: 30px 0;
     background: white;
     text-align: center;
 }
@@ -133,7 +187,7 @@ body {
     max-width: 300px;
     height: 280px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 20px;
   }
   
   .cater::after {
@@ -189,8 +243,9 @@ body {
 .image-row  img{
     width: 70px;
     height: 70px;
-    border-radius: 10px;  
+    border-radius: 5px;  
     margin: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 /* Style for each image */
 .menu-image {
@@ -203,6 +258,7 @@ body {
 .menu-image:hover {
     transform: scale(1.1); /* Slight zoom effect on hover */
 }
+/* ------------------------- */
 
 /* --------------------- */
 .aboutus{

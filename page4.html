@@ -8,29 +8,11 @@
 </head>
 
 
-<div class="image-row">
-    <a href="page1.html">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 1" class="menu-image">
-    </a>
-    <a href="page2.html">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcDrg8riFmyr6VcFEGQGQ8fFVJR6h2Uc2Caw&s" alt="Image 2" class="menu-image">
-    </a>
-    <a href="page3.html">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 3" class="menu-image">
-    </a>
-    <a href="page4.html">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcDrg8riFmyr6VcFEGQGQ8fFVJR6h2Uc2Caw&s" alt="Image 4" class="menu-image">
-    </a>
-    <a href="page5.html">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 5" class="menu-image">
-    </a>
-</div>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
     body {
     font-family: "Open Sans", sans-serif;
-    padding: 20px;
 }
 
 .faq-container {
@@ -148,6 +130,52 @@
 </style>
 
 <body>
+      
+    <!-- ------------------------------------------ -->
+   <!-- Main Navbar -->
+   <div class="navbar">
+    <span class="toggle-btn" onclick="toggleSideNav()">☰</span>
+    <img class="logo" src="images/poifis1.png" alt="">
+</div>
+
+<!-- Side Navigation -->
+<div id="sideNav" class="side-nav">
+    <div class="lgnae">
+    <img class="logo" src="images/poifis1.png" alt="">
+     <h3 class="srfe">Sorshe</h3>
+    </div>
+      <a class="hdm" href="./index.html">Home</a>
+      <a class="hdm" href="page1.html">Digital Menu</a>
+      <a href="page1.html"><h4 class="listfoodes">Stater</h4></a>
+      <a href="page2.html"><h4 class="listfoodes">Main Course</h4></a>
+      <a href="page3.html"><h4 class="listfoodes">Rice</h4></a>
+      <a href="page4.html"><h4 class="listfoodes">Desserts</h4></a>
+      <a href="page5.html"><h4 class="listfoodes">Combos</h4></a>
+  </div>
+
+<!-- Overlay for clicking outside -->
+<div id="overlay" class="overlay" onclick="closeSideNav()"></div>
+<!-- ------------------------------------------- -->
+
+    <div class="image-row">
+        <a href="page1.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 1" class="menu-image">
+        </a>
+        <a href="page2.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcDrg8riFmyr6VcFEGQGQ8fFVJR6h2Uc2Caw&s" alt="Image 2" class="menu-image">
+        </a>
+        <a href="page3.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 3" class="menu-image">
+        </a>
+        <a href="page4.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcDrg8riFmyr6VcFEGQGQ8fFVJR6h2Uc2Caw&s" alt="Image 4" class="menu-image">
+        </a>
+        <a href="page5.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 5" class="menu-image">
+        </a>
+    </div>
+
+
     <div class="faq-container">
         <h2 class="stat">DESSERTS</h2>
 
@@ -228,5 +256,6 @@
 });
 </script>
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src="script.js"></script>
 </body>
 </html>
