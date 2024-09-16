@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>newmenusorshe</title>
+    <title>tediua</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="https://imgmedia.lbb.in/media/2019/10/5daf295896edf48a0b9dd3d5_1571760472347.jpg" type="image/x-icon">
 </head>
 <body>
-  <button class="toggle-btn" onclick="toggleNav()">☰</button>
+  <!-- ------------------------------------------ -->
+   <!-- Main Navbar -->
+   <div class="navbar">
+    <span class="toggle-btn" onclick="toggleSideNav()">☰</span>
+    <img class="logo" src="images/poifis1.png" alt="">
+</div>
 
-  <div id="sideNav" class="side-nav">
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+<!-- Side Navigation -->
+<div id="sideNav" class="side-nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</div>
 
-  <!-- Overlay that will appear when the sideNav is open -->
-  <div id="overlay" class="overlay" onclick="closeNavOutside(event)"></div>
+<!-- Overlay for clicking outside -->
+<div id="overlay" class="overlay" onclick="closeSideNav()"></div>
+
 
   <!-- --------------------------------------------------------------------------------- -->
   <h1 class="menunewupdate">MENU</h1>
 
-   <div class="gallery">
+   <div class="cater">
 
      <a href="page1.html">
        <img

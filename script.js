@@ -1,25 +1,29 @@
-function toggleNav() {
-    const sideNav = document.getElementById("sideNav");
-    const overlay = document.getElementById("overlay");
+function toggleSideNav() {
+  const sideNav = document.getElementById("sideNav");
+  const overlay = document.getElementById("overlay");
   
-    // Toggle the sidebar
-    if (sideNav.style.left === "-250px" || sideNav.style.left === "-100%") {
-      sideNav.style.left = "0";  // Show sidebar
-      overlay.classList.add("active"); // Show overlay
-    } else {
-      sideNav.style.left = "-250px";  // Hide sidebar
-      overlay.classList.remove("active"); // Hide overlay
-    }
+  if (sideNav.style.width === "250px") {
+      closeSideNav();
+  } else {
+      sideNav.style.width = "250px";
+      overlay.style.display = "block";
   }
+}
+
+function closeSideNav() {
+  document.getElementById("sideNav").style.width = "0";
+  document.getElementById("overlay").style.display = "none";
+}
+
+// Close side nav if clicked outside the box
+document.addEventListener('click', function(event) {
+  const sideNav = document.getElementById("sideNav");
+  const overlay = document.getElementById("overlay");
   
-  function closeNavOutside(event) {
-    const sideNav = document.getElementById("sideNav");
-    const overlay = document.getElementById("overlay");
-  
-    // Close the sidebar and hide the overlay when clicking outside
-    sideNav.style.left = "-250px";
-    overlay.classList.remove("active");
+  if (!sideNav.contains(event.target) && !event.target.matches('.toggle-btn') && sideNav.style.width === "250px") {
+      closeSideNav();
   }
+});
   // -------------------------------------------------------
   let slideIndex = 1;
 

@@ -5,143 +5,107 @@
     box-sizing: border-box;
 }
 /* --------------------------------------- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    min-height: 100vh;
-    position: relative;
-  }
-  
-  /* Sidebar styling */
-  .side-nav {
-    height: 100vh;
-    width: 250px;
-    background-color: #333;
-    position: fixed;
-    left: -250px; /* Hidden by default */
-    transition: left 0.3s ease; /* Smooth transition */
-    z-index: 1000;
-  }
-  
-  .side-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 60px;
-  }
-  
-  .side-nav ul li {
-    padding: 16px;
-    text-align: center;
-  }
-  
-  .side-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-  }
-  
-  .side-nav ul li a:hover {
-    background-color: #575757;
-  }
-  
-  /* Main content */
-  #main-content {
-    flex: 1;
-    padding: 20px;
-    margin-left: 250px;
-    transition: margin-left 0.3s ease;
-    position: relative;
-    z-index: 900;
-  }
-  
-  /* Toggle button */
-  .toggle-btn {
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-    background-color: #333;
-    color: white;
-    border: none;
-    position: fixed;
-    left: 10px;
-    top: 10px;
-    z-index: 11;
-  }
-  
-  /* Overlay styling */
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Black with opacity */
-    opacity: 0; /* Initially hidden */
-    visibility: hidden; /* Initially hidden */
-    transition: opacity 0.3s ease;
-    z-index: 950;
-  }
-  
-  /* When the overlay is active */
-  .overlay.active {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .side-nav {
-      /* width: 100%; */
-      left: -100%;
-    }
-  
-    #main-content {
-      margin-left: 0;
-    }
-  
-    .toggle-btn {
-      left: 10px;
-    }
-  }
-  
-.image-row {
-    display: flex;
-    justify-content: center;
-    max-width: 1200px;   
-}
-.sta{
-    color: #000;
-    font-size: 20px;
-    text-decoration: none;
-    margin: 20px;
-}
-.ita{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-.image-row  img{
-    width: 70px;
-    height: 70px;
-    border-radius: 10px;  
-    margin: 10px;
-}
-/* Style for each image */
-.menu-image {
-    width: 50%; /* Adjusts width for 5 images to fit the row */
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+ /* Basic reset */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.menu-image:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 2000px; /* For scrolling demo */
+}
+
+/* Main horizontal navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a nice look */
+  z-index: 1000;
+}
+
+/* Toggle button */
+.toggle-btn {
+  color: #000;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Logo on the right */
+.logo {
+  color: white;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+}
+
+/* Side navigation (initially hidden) */
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; /* Push content below the sticky navbar */
+  z-index: 1500;
+}
+
+.side-nav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  background-color: #555;
+}
+
+/* Close button for side menu */
+.side-nav .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 36px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Overlay when side nav is open */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .toggle-btn {
+      font-size: 20px;
+  }
+
+  .logo {
+      font-size: 16px;
+  }
 }
 /* ------------------------------- */
 /* ------------------------------------/ */
@@ -152,30 +116,59 @@
     background: white;
     text-align: center;
 }
-  .gallery {
+  .cater {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* gap: 16px; */
+    gap: 16px;
     max-width: 1400px;
     margin: 0 auto;
     padding: 20px 10px;
   }
   
-  .gallery img {
-    width: 100%;
+  .cater img {
+    width: 280px;
     max-width: 300px;
-    height: 300px;
+    height: 280px;
     object-fit: cover;
-    /* border-radius: 10px; */
+    border-radius: 10px;
   }
   
-  .gallery::after {
+  .cater::after {
     content: "";
     width: 350px;
   }
+  @media screen and (max-width: 600px){
+    .cater{
+      display: grid;
+      grid-template-columns: repeat(2, 200px);
+      grid-template-rows: repeat(2, 200px);
+      /* gap: 15px; */
+      justify-content: center;
+      padding: 16px;
+    }
+    .cater img{
+      width: 200px;
+      height: 200px;
+    }
+  }
+  @media screen and (max-width: 450px){
+    .cater{
+      display: grid;
+      grid-template-columns: repeat(2, 160px);
+      grid-template-rows: repeat(2, 160px);
+    }
+    .cater img{
+       width: 160px;
+       height: 160px;
+    }
+  }
+
+
+
+
 /* --------------- */
 .image-row {
     display: flex;
@@ -243,34 +236,36 @@
   }
 }
 /* ------------------------------------------------------- */
-/* Gallery - 9 images in flex layout */
+/* Gallery container - center aligned and 3 small images per row */
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3, 150px);
+  /* gap: 15px; */
   justify-content: center;
   padding: 16px;
-}
-
+} 
+/* Gallery items */
 .gallery-item {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 200px; /* Smaller image height */
   overflow: hidden;
+  position: relative;
 }
 
 .gallery-item img {
   width: 100%;
-  height: 100%;
+  height: 150px;
   object-fit: cover;
-  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
+/* Hover effect for zoom-in */
 .gallery-item:hover img {
   transform: scale(1.1);
 }
 
-/* Lightbox */
+/* Lightbox overlay */
 .lightbox {
   display: none;
   position: fixed;
@@ -283,65 +278,77 @@
 }
 
 .lightbox-content {
-  position: relative;
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .lightbox-content img {
-      /* max-width: 100vh; */
-      max-height: 100vh;
-      object-fit: contain;
-  }
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  color: white;
-  cursor: pointer;
+  max-width: 100%;
+  max-height: 100vh;
+  object-fit: contain;
 }
 
-.prev, .next {
-  cursor: pointer;
+.close, .prev, .next {
   position: absolute;
-  top: 50%;
-  font-size: 30px;
   color: white;
-  padding: 16px;
-  user-select: none;
+  font-size: 2rem;
+  cursor: pointer;
 }
+
 .close {
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
-  font-size: bold;
+  top: 20px;
+  right: 30px;
 }
+
 .prev {
-  left: 10px;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
 }
 
 .next {
-  right: 10px;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }
 
-/* Mobile Responsiveness */
-@media screen and (max-width: 600px) {
+/* Ensure consistent layout on mobile */
+@media screen and (max-width: 800px){
+  .gallery {
+    grid-template-columns: repeat(3, 255px); /* Still 3 images per row, smaller on mobile */
+  }
+
   .gallery-item {
-    width: 100%;
-    height: auto;
+    height: 255px; /* Adjust image size for mobile */
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .gallery {
+    grid-template-columns: repeat(3, 150px); /* Still 3 images per row, smaller on mobile */
+  }
+
+  .gallery-item {
+    height: 150px; /* Adjust image size for mobile */
   }
 
   .prev, .next {
-    font-size: 18px;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 450px){
+  .gallery {
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+}
+  .gallery-item{
+     height: 120px;
+  }
+  .gallery-item img{
+    width: 100%;
+    height: 120px;
   }
 }
 
