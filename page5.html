@@ -8,8 +8,6 @@
 </head>
 
 
-
-
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
     body {
@@ -26,6 +24,10 @@
     align-items: center;
     margin-bottom: 15px;
     gap: 15px;
+    background: #f9fafb;
+    padding: 15px;
+    padding-top: 5px;
+    border-top: 1px solid #bfbfbf;
 }
 /* .om-wayr{
     display: flex;
@@ -41,7 +43,7 @@
     border-radius: 5px;
 }
 .stat{
-    margin: 15px;
+    margin: 10px 15px;
 }
 .faq-image:hover {
     transform: scale(1.1);
@@ -59,7 +61,6 @@
 
 .faq-question {
     font-size: 18px;
-    /* margin-left: 20px; */
     font-weight: 600;
     align-items: center;
     display: flex;
@@ -67,7 +68,31 @@
 .siits{
     margin-left: 20px;
 }
-
+.itema{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.iat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vegi{
+    background-size: 10px;
+    width: 15px;
+    height: 15px;
+}
+.fbfnm{
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.meteiqt{
+    color: #8e8e8e;
+    width: 90%;
+}
 .faq-arrow {
     font-size: 18px;
     transition: transform 0.3s ease;
@@ -85,8 +110,13 @@
 .price{
     font-weight: 500;
     color: red;
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 10px;
+    white-space: nowrap;
+}
+.secpri{
+    color: green;
+    margin-left: 5px;
 }
 
 .open .faq-arrow {
@@ -127,6 +157,9 @@
 }
 
 </style>
+
+
+
 
 <body>
       
@@ -173,8 +206,151 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 5" class="menu-image">
         </a>
     </div>
-    
+
     <div class="faq-container">
+        <h2 class="stat">COMBOS</h2>
+
+        <div class="faq-item">
+            <!-- <div class="faq-header om-wayr">
+              <div class="ita">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                <div class="faq-question siits">STARTER</div>
+              </div>
+                <div class="faq-arrow">&#9662;</div> 
+            </div> -->
+
+                  <div>
+                        <div class="itema">
+                            <div class="iat" >
+                              <img class="vegi" src="images/nonvegtri.png" alt="">
+                              <p class="fbfnm">Rui combo</p>
+                             </div>
+                             <div>
+                              <Span class="price">  ₹649</Span>
+                            </div>
+                        </div>
+                         <!-- <Span class="price">  ₹ 499</Span> -->
+                        <p class="meteiqt">Shukto, machher matha diye moong dal with jhuri bhaja, sorshe rui, chutney with papad, payesh.</p>
+                   </div>
+
+                   <div>
+                    <div class="itema">
+                        <div class="iat" >
+                          <img class="vegi" src="images/nonvegtri.png" alt="">
+                          <p class="fbfnm">Katla combo</p>
+                         </div>
+                         <div>
+                          <Span class="price">  ₹ 699</Span>
+                        </div>
+                    </div>
+                     <!-- <Span class="price">  ₹ 499</Span> -->
+                    <p class="meteiqt">Shukto, machher matha diye moong dal with jhuri bhaja, katla kalia, chutney with papad, payesh.</p>
+               </div>
+
+               <div>
+                <div class="itema">
+                    <div class="iat" >
+                      <img class="vegi" src="images/nonvegtri.png" alt="">
+                      <p class="fbfnm">Chicken kosha combo</p>
+                     </div>
+                     <div>
+                      <Span class="price">  ₹ 699</Span>
+                    </div>
+                </div>
+                 <!-- <Span class="price">  ₹ 499</Span> -->
+                <p class="meteiqt">Shukto, machher matha diye moong dal with jhuri bhaja, chicken kosha, chutney with papad, payesh.</p>
+           </div>
+
+           <div>
+            <div class="itema">
+                <div class="iat" >
+                  <img class="vegi" src="images/nonvegtri.png" alt="">
+                  <p class="fbfnm">Chicken bhape combo</p>
+                 </div>
+                 <div>
+                  <Span class="price">  ₹ 749</Span>
+                </div>
+            </div>
+             <!-- <Span class="price">  ₹ 499</Span> -->
+            <p class="meteiqt">Shukto, machher matha diye moong dal with jhuri bhaja, chicken bhape, chutney with papad, payesh.</p>
+       </div>
+
+           <div>
+            <div class="itema">
+                <div class="iat" >
+                  <img class="vegi" src="images/nonvegtri.png" alt="">
+                  <p class="fbfnm">Mutton kosha combo</p>
+                 </div>
+                 <div>
+                  <Span class="price">  ₹ 849</Span>
+                </div>
+            </div>
+             <!-- <Span class="price">  ₹ 499</Span> -->
+            <p class="meteiqt">Shukto, machher matha diye moong dal with jhuri bhaja, mutton kosha, chutney with papad, payesh.</p>
+       </div>
+
+       <div>
+        <div class="itema">
+            <div class="iat" >
+              <img class="vegi" src="images/nonvegtri.png" alt="">
+              <p class="fbfnm">Chicken kosha-basanti pulao</p>
+             </div>
+             <div>
+              <Span class="price">  ₹ 699</Span>
+            </div>
+        </div>
+         <!-- <Span class="price">  ₹ 499</Span> -->
+        <p class="meteiqt">Chicken kosha, basanti pulao, chutney with papad, payesh.</p>
+   </div>   
+                         
+   <div>
+    <div class="itema">
+        <div class="iat" >
+          <img class="vegi" src="images/nonvegtri.png" alt="">
+          <p class="fbfnm">Chicken kosha-luchi combo</p>
+         </div>
+         <div>
+          <Span class="price">  ₹ 699</Span>
+        </div>
+    </div>
+     <!-- <Span class="price">  ₹ 499</Span> -->
+    <p class="meteiqt">Chholar dal, chicken kosha, luchi, chutney with papad, payesh.</p>
+</div>
+
+
+<div>
+    <div class="itema">
+        <div class="iat" >
+          <img class="vegi" src="images/nonvegtri.png" alt="">
+          <p class="fbfnm">Mutton kosha basanti pulao</p>
+         </div>
+         <div>
+          <Span class="price">  ₹ 849</Span>
+        </div>
+    </div>
+     <!-- <Span class="price">  ₹ 499</Span> -->
+    <p class="meteiqt">Mutton kosha, basanti pulao, chutney with papad, payesh.</p>
+</div>
+
+
+<div>
+    <div class="itema">
+        <div class="iat" >
+          <img class="vegi" src="images/nonvegtri.png" alt="">
+          <p class="fbfnm">Mutton kosha-luchi combo</p>
+         </div>
+         <div>
+          <Span class="price">  ₹ 849</Span>
+        </div>
+    </div>
+     <!-- <Span class="price">  ₹ 499</Span> -->
+    <p class="meteiqt">Chholar dal, mutton kosha, luchi, chutney with papad, payesh.</p>
+</div>
+
+            </div>
+        </div>
+    
+    <!-- <div class="faq-container">
         <h2 class="stat">COMBOS</h2>
 
          <div class="faq-item">
@@ -183,7 +359,7 @@
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
                 <div class="faq-question siits">Combos</div>
               </div>
-                <div class="faq-arrow">&#9662;</div> <!-- Down Arrow Unicode -->
+                <div class="faq-arrow">&#9662;</div> 
             </div>
 
             <div class="faq-answer">
@@ -217,7 +393,7 @@
             </div>
         </div>
 
-        <!-- <div class="faq-item">
+        <div class="faq-item">
             <div class="faq-header om-wayr">
               <div class="ita">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
@@ -226,9 +402,9 @@
                 <div class="faq-arrow">&#9662;</div> 
             </div>
             <div class="faq-answer">🔴 FILLET OF FISH DIPPED IN BATTER AND FRIED TO A JUICY INSIDE, CRISPY OUTSIDE FINISH.<Span class="price">  ₹ 499</Span></div>
-        </div> -->
+        </div>
         
-    </div>
+    </div> -->
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {

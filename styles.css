@@ -219,7 +219,15 @@ body {
        height: 160px;
     }
   }
-
+  .menustater{
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 5px;
+    color: #000;
+    letter-spacing: 1px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+  }
 
 
 
@@ -228,6 +236,9 @@ body {
     display: flex;
     justify-content: center;
     max-width: 1200px;   
+}
+.image-row a{
+  text-decoration: none;
 }
 .sta{
     color: #000;
@@ -247,6 +258,14 @@ body {
     margin: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
+.smrdc{
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  text-decoration-line: none;
+  color: #000;
+  font-weight: 500;
+}
+
 /* Style for each image */
 .menu-image {
     width: 50%; /* Adjusts width for 5 images to fit the row */

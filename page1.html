@@ -41,6 +41,10 @@
     align-items: center;
     margin-bottom: 15px;
     gap: 15px;
+    background: #f9fafb;
+    padding: 15px;
+    padding-top: 5px;
+    border-top: 1px solid #bfbfbf;
 }
 /* .om-wayr{
     display: flex;
@@ -56,7 +60,7 @@
     border-radius: 5px;
 }
 .stat{
-    margin: 15px;
+    margin: 10px 15px;
 }
 .faq-image:hover {
     transform: scale(1.1);
@@ -81,7 +85,32 @@
 .siits{
     margin-left: 20px;
 }
-
+.itema{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.iat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vegi{
+    background-size: 10px;
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+}
+.fbfnm{
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.meteiqt{
+    color: #8e8e8e;
+    width: 90%;
+}
 .faq-arrow {
     font-size: 18px;
     transition: transform 0.3s ease;
@@ -99,7 +128,7 @@
 .price{
     font-weight: 500;
     color: red;
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 10px;
     white-space: nowrap;
 }
@@ -176,18 +205,23 @@
 
     <div class="image-row">
         <a href="page1.html">
+            <h4 class="smrdc">Stater</h4>  
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 1" class="menu-image">
         </a>
         <a href="page2.html">
+            <h4 class="smrdc">MainCourse</h4>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcDrg8riFmyr6VcFEGQGQ8fFVJR6h2Uc2Caw&s" alt="Image 2" class="menu-image">
         </a>
         <a href="page3.html">
+            <h4 class="smrdc">Rice</h4>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 3" class="menu-image">
         </a>
         <a href="page4.html">
+            <h4 class="smrdc">Desserts</h4>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcDrg8riFmyr6VcFEGQGQ8fFVJR6h2Uc2Caw&s" alt="Image 4" class="menu-image">
         </a>
         <a href="page5.html">
+            <h4 class="smrdc">Combos</h4>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 5" class="menu-image">
         </a>
     </div>
@@ -197,32 +231,6 @@
         <h2 class="stat">STARTER</h2>
 
         <div class="faq-item">
-            <div class="faq-header om-wayr">
-              <div class="ita">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
-                <div class="faq-question siits">STARTER</div>
-              </div>
-                <div class="faq-arrow">&#9662;</div> 
-            </div>
-
-            <div class="faq-answer">
-                <span class="faq-question">🔴 Fish batter Fry</span> fillet of fish dipped in batter and fried to a juicy inside, crispy outside finish. <Span class="price">  ₹ 499</Span>
-                <br>
-                <br>
-                <span class="faq-question">🔴 Fish fry</span> Fillet of fish marinated in aromatic spices and fried in a crunschy coating. <Span class="price">  ₹ 499</Span>
-                <br>
-                <br>
-                <span class="faq-question">🔴 Fish finger</span> Strip of fish marinated in aromatic spices and fried in crunchy coating. <Span class="price">  ₹ 499</Span>
-                <br>
-                <br>
-                <span class="faq-question">🔴 Chicken cutlet</span> Minced chicken marinated in aromatic spices and shallow fried to perfection. <Span class="price">  ₹ 499</Span>
-                <br>
-                <br>
-                <span class="faq-question">🔴 Chicken pakoda</span> Chicken pieces with bone marinated in special spices and fried to perfection. <Span class="price">  ₹ 499</Span>
-                <br>
-                <br>
-            </div>
-            
             <!-- <div class="faq-header om-wayr">
               <div class="ita">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
@@ -231,6 +239,77 @@
                 <div class="faq-arrow">&#9662;</div> 
             </div> -->
 
+                  <div>
+                        <div class="itema">
+                            <div class="iat" >
+                              <img class="vegi" src="images/nonvegtri.png" alt="">
+                              <p class="fbfnm">Fish batter Fry</p>
+                             </div>
+                             <div>
+                              <Span class="price">  ₹ 499</Span>
+                            </div>
+                        </div>
+                         <!-- <Span class="price">  ₹ 499</Span> -->
+                        <p class="meteiqt">Fillet of fish dipped in batter and fried to a juicy inside, crispy outside finish.</p>
+                   </div>
+
+                   <div>
+                    <div class="itema">
+                        <div class="iat" >
+                          <img class="vegi" src="images/nonvegtri.png" alt="">
+                          <p class="fbfnm">Fish fry</p>
+                         </div>
+                         <div>
+                          <Span class="price">  ₹ 499</Span>
+                        </div>
+                    </div>
+                     <!-- <Span class="price">  ₹ 499</Span> -->
+                    <p class="meteiqt">Fillet of fish marinated in aromatic spices and fried in a crunschy coating.</p>
+               </div>
+
+               <div>
+                <div class="itema">
+                    <div class="iat" >
+                      <img class="vegi" src="images/nonvegtri.png" alt="">
+                      <p class="fbfnm">Fish finger</p>
+                     </div>
+                     <div>
+                      <Span class="price">  ₹ 499</Span>
+                    </div>
+                </div>
+                 <!-- <Span class="price">  ₹ 499</Span> -->
+                <p class="meteiqt">Fillet of fish dipped in batter and fried to a juicy inside, crispy outside finish.</p>
+           </div>
+
+           <div>
+            <div class="itema">
+                <div class="iat" >
+                  <img class="vegi" src="images/nonvegtri.png" alt="">
+                  <p class="fbfnm">Chicken cutlet</p>
+                 </div>
+                 <div>
+                  <Span class="price">  ₹ 449</Span>
+                </div>
+            </div>
+             <!-- <Span class="price">  ₹ 499</Span> -->
+            <p class="meteiqt">Minced chicken marinated in aromatic spices and shallow fried to perfection.</p>
+       </div>
+
+       <div>
+        <div class="itema">
+            <div class="iat" >
+              <img class="vegi" src="images/nonvegtri.png" alt="">
+              <p class="fbfnm">Chicken pakoda</p>
+             </div>
+             <div>
+              <Span class="price">  ₹ 449</Span>
+            </div>
+        </div>
+         <!-- <Span class="price">  ₹ 499</Span> -->
+        <p class="meteiqt">Chicken pieces with bone marinated in special spices and fried to perfection.</p>
+   </div>
+
+            </div>
         </div>
 
         <!-- <div class="faq-item">

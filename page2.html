@@ -24,6 +24,10 @@
     align-items: center;
     margin-bottom: 15px;
     gap: 15px;
+    background: #f9fafb;
+    padding: 15px;
+    padding-top: 5px;
+    border-top: 1px solid #bfbfbf;
 }
 /* .om-wayr{
     display: flex;
@@ -39,7 +43,7 @@
     border-radius: 5px;
 }
 .stat{
-    margin: 15px;
+    margin: 10px 15px;
 }
 .faq-image:hover {
     transform: scale(1.1);
@@ -57,16 +61,38 @@
 
 .faq-question {
     font-size: 18px;
-    /* margin-left: 20px; */
     font-weight: 600;
-
     align-items: center;
     display: flex;
 }
 .siits{
     margin-left: 20px;
 }
-
+.itema{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.iat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vegi{
+    background-size: 10px;
+    width: 15px;
+    height: 15px;
+}
+.fbfnm{
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.meteiqt{
+    color: #8e8e8e;
+    width: 90%;
+}
 .faq-arrow {
     font-size: 18px;
     transition: transform 0.3s ease;
@@ -84,11 +110,13 @@
 .price{
     font-weight: 500;
     color: red;
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 10px;
+    white-space: nowrap;
 }
 .secpri{
     color: green;
+    margin-left: 5px;
 }
 
 .open .faq-arrow {
@@ -176,8 +204,194 @@
     </a>
 </div>
 
+<div class="faq-container">
+    <h2 class="stat">MAIN COURSE</h2>
 
-    <div class="faq-container">
+    <div class="faq-item">
+        <!-- <div class="faq-header om-wayr">
+          <div class="ita">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+            <div class="faq-question siits">STARTER</div>
+          </div>
+            <div class="faq-arrow">&#9662;</div> 
+        </div> -->
+
+              <div>
+                    <div class="itema">
+                        <div class="iat" >
+                          <img class="vegi" src="images/greenveg.png" alt="">
+                          <p class="fbfnm">Shukto</p>
+                         </div>
+                         <div>
+                          <Span class="price secpri">  ₹ 299</Span>
+                        </div>
+                    </div>
+                     <!-- <Span class="price">  ₹ 499</Span> -->
+                    <p class="meteiqt">An Evergreen preparation from grandma's kitchen, consists mixed vegetables including bitter gourd cooked to a smooth finish.</p>
+               </div>
+
+               <div>
+                <div class="itema">
+                    <div class="iat" >
+                      <img class="vegi" src="images/greenveg.png" alt="">
+                      <p class="fbfnm">Jhinge Aloo Posto</p>
+                     </div>
+                     <div>
+                      <Span class="price secpri">  ₹ 399</Span>
+                    </div>
+                </div>
+                 <!-- <Span class="price">  ₹ 499</Span> -->
+                <p class="meteiqt">Ridge Gourd and potato cooked in a thick gravy made out of poppy seeds.</p>
+           </div>
+
+           <div>
+            <div class="itema">
+                <div class="iat" >
+                  <img class="vegi" src="images/greenveg.png" alt="">
+                  <p class="fbfnm">Chholar dal (with jhuri bhaja)</p>
+                 </div>
+                 <div>
+                  <Span class="price secpri">  ₹ 299</Span>
+                </div>
+            </div>
+             <!-- <Span class="price">  ₹ 499</Span> -->
+            <p class="meteiqt">Chana Dal cooked in ghee with chunk of coconut, served with grated crispy fried potato.</p>
+       </div>
+
+       <div>
+         <div class="itema">
+             <div class="iat" >
+              <img class="vegi" src="images/nonvegtri.png" alt="">
+              <p class="fbfnm">Machher matha diye dal (with jhuri bhaja)</p>
+             </div>
+             <div>
+              <Span class="price">  ₹ 399</Span>
+            </div>
+         </div>
+           <!-- <Span class="price">  ₹ 499</Span> -->
+          <p class="meteiqt">Moong dal cooked with fish head that will make the bengali taste buds nostalgic. served with crispy fried potato.</p>
+      </div>
+
+           
+
+       <div>
+        <div class="itema">
+            <div class="iat" >
+              <img class="vegi" src="images/nonvegtri.png" alt="">
+              <p class="fbfnm">Sorshe rui</p>
+             </div>
+             <div>
+              <Span class="price">  ₹ 399</Span>
+            </div>
+        </div>
+         <!-- <Span class="price">  ₹ 499</Span> -->
+        <p class="meteiqt">Fried ruhu fish cooked to perfection in traditional mustard gravy.</p>
+   </div>
+
+   <div>
+    <div class="itema">
+        <div class="iat" >
+          <img class="vegi" src="images/nonvegtri.png" alt="">
+          <p class="fbfnm">katla kalia</p>
+         </div>
+         <div>
+          <Span class="price">  ₹ 449</Span>
+        </div>
+    </div>
+     <!-- <Span class="price">  ₹ 499</Span> -->
+    <p class="meteiqt">Fried katla fish cooked with potato in an aromatic gravy.</p>
+</div>
+                   
+<div>
+    <div class="itema">
+        <div class="iat" >
+          <img class="vegi" src="images/nonvegtri.png" alt="">
+          <p class="fbfnm">Sorshe special bhetki</p>
+         </div>
+         <div>
+          <Span class="price">  ₹ 449</Span>
+        </div>
+    </div>
+     <!-- <Span class="price">  ₹ 499</Span> -->
+    <p class="meteiqt">Succulent fresh water bhetki fish marinated in secret spices and steamed to perfection. this unique preparation of the chef will certainly blow your taste buds.</p>
+</div>
+
+<div>
+    <div class="itema">
+        <div class="iat" >
+          <img class="vegi" src="images/nonvegtri.png" alt="">
+          <p class="fbfnm">Chingri bhape</p>
+         </div>
+         <div>
+          <Span class="price">  ₹ 449</Span>
+        </div>
+    </div>
+     <!-- <Span class="price">  ₹ 499</Span> -->
+    <p class="meteiqt">Prawns marinated in mustard paste, steamed until tender. an all time favourite in the bengali kitchen.</p>
+</div>
+
+<div>
+    <div class="itema">
+        <div class="iat" >
+          <img class="vegi" src="images/nonvegtri.png" alt="">
+          <p class="fbfnm">Chingri malai curry</p>
+         </div>
+         <div>
+          <Span class="price">  ₹ 449</Span>
+        </div>
+    </div>
+     <!-- <Span class="price">  ₹ 499</Span> -->
+    <p class="meteiqt">prawns cooked in coconut milk with aromatic spices. this
+        silky gravy with the aroma of coconut milk and spices will remain in your wishlist.</p>
+</div>
+
+<div>
+    <div class="itema">
+        <div class="iat" >
+          <img class="vegi" src="images/nonvegtri.png" alt="">
+          <p class="fbfnm">Chicken bhape</p>
+         </div>
+         <div>
+          <Span class="price">  ₹ 449</Span>
+        </div>
+    </div>
+     <!-- <Span class="price">  ₹ 499</Span> -->
+    <p class="meteiqt">Succulent boneless chicken marinated in mustard paste, steamed until tender.</p>
+</div>
+
+<div>
+    <div class="itema">
+        <div class="iat" >
+          <img class="vegi" src="images/nonvegtri.png" alt="">
+          <p class="fbfnm">Chicken kosha</p>
+         </div>
+         <div>
+          <Span class="price">  ₹ 449</Span>
+        </div>
+    </div>
+     <!-- <Span class="price">  ₹ 499</Span> -->
+    <p class="meteiqt">Chicken cooked in the traditional semi-thick gravy that is rich in aroma.</p>
+</div>
+
+<div>
+    <div class="itema">
+        <div class="iat" >
+          <img class="vegi" src="images/nonvegtri.png" alt="">
+          <p class="fbfnm">Mutton kosha.</p>
+         </div>
+         <div>
+          <Span class="price">  ₹ 449</Span>
+        </div>
+    </div>
+     <!-- <Span class="price">  ₹ 499</Span> -->
+    <p class="meteiqt">Succulent tender mutton pieces cooked with potato in aromatic traditional gravy will certainly remind your grandma.</p>
+</div>
+
+            
+        </div>
+    </div>
+
+    <!-- <div class="faq-container">
         <h2 class="stat">MAIN COURSE</h2>
 
         <div class="faq-item">
@@ -216,7 +430,7 @@
                 silky gravy with the aroma of coconut milk and spices will remain in your wishlist. <Span class="price">  ₹ 299</Span>
                 <br>
                 <br>
-                <span class="faq-question">🔴 Chicken bhape</span> Succulent boneless chicken marinated in mustard paste, steamed until tender.<Span class="price">  ₹ 549</Span>
+                <span class="faq-question">🔴 Chicken bhape</span> c<Span class="price">  ₹ 549</Span>
                 <br>
                 <br>
                 <span class="faq-question">🔴 Chicken kosha</span> Chicken cooked in the traditional semi-thick gravy that is rich in aroma.<Span class="price">  ₹ 449</Span>
@@ -231,7 +445,7 @@
 
         
 
-        <!-- <div class="faq-item">
+        <div class="faq-item">
             <div class="faq-header om-wayr">
               <div class="ita">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
@@ -240,9 +454,9 @@
                 <div class="faq-arrow">&#9662;</div> 
             </div>
             <div class="faq-answer">🟢 Chana Dal cooked in ghee with chunk of coconut, served with grated crispy fried potato. .<Span class="price">  ₹ 499</Span></div>
-        </div> -->
+        </div>
 
-    </div>
+    </div> -->
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
