@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    /* display: flex; */
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+    background: #f9fafb;
+    padding: 15px;
+    padding-top: 5px;
+    border-top: 1px solid #bfbfbf;
+}
+/* .om-wayr{
+    display: flex;
+    text-align: center;
+    align-items: center;
+} */
+.faq-image {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+.stat{
+    margin: 10px 15px;
+}
+.faq-image:hover {
+    transform: scale(1.1);
+}
+
+.faq-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: 5px;
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: 600;
+    align-items: center;
+    display: flex;
+}
+.siits{
+    margin-left: 20px;
+}
+.itema{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.iat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vegi{
+    background-size: 10px;
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+}
+.fbfnm{
+    /* margin-left: 10px; */
+    font-weight: 600;
+    font-size: 18px;
+}
+.meteiqt{
+    color: #8e8e8e;
+    width: 90%;
+}
+.faq-arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    margin-left: 20px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px ;
+    font-size: 16px;
+    color: #555;
+    line-height: 25px;
+    background: #f9fafb;
+}
+.price{
+    font-weight: 500;
+    color: #000;
+    font-size: 18px;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+.secpri{
+    color: green;
+    margin-left: 5px;
+}
+
+.open .faq-arrow {
+    transform: rotate(180deg);
+}
+
+/* Style for the image row */
+.image-row {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; /* Adds space between images */
+    overflow-x: hidden; /* No scrolling on larger screens */
+    margin: 20px 0;
+    padding: 10px;
+    max-width: 100%;
+    text-align: center;
+}
+.image-row a{
+    text-decoration: none;
+}
+.smrdc{
+    font-family: "Open Sans", sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+/* Style for each image */
+.menu-image {
+    border-radius: 5px;
+    border: 1px solid #fff;
+    width: 80px; /* Fixed width */
+    height: 80px; /* Fixed height */
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transition for zoom and blur */
+    flex-shrink: 0; /* Prevents image from shrinking */
+    object-fit: cover; /* Ensures images fit within the size without distortion */
+}
+
+/* Blur effect for unselected images */
+.image-blur {
+    filter: blur(3px); /* Apply blur to unselected images */
+    opacity: 0.6; /* Make unselected images slightly transparent */
+}
+
+/* Highlight effect for the selected image */
+.image-highlight {
+    transform: scale(1.2); /* Make the clicked image larger */
+    filter: none; /* Remove any blur from the selected image */
+    opacity: 1; /* Full opacity for selected image */
+}
+
+/* Enable scrolling with small images on small screens */
+@media (max-width: 768px) {
+    .image-row {
+        overflow-x: auto; /* Enable horizontal scroll */
+        flex-wrap: nowrap; /* Prevent wrapping of images */
+        scroll-behavior: smooth; /* Smooth scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+    }
+
+    .menu-image {
+        width: 80px; /* Fixed width for small screens */
+        height: 80px; /* Fixed height for small screens */
+    }
+}
+@media screen and (max-width: 500px){
+    .image-row{
+        justify-content: flex-start;
+    }
+}
+
+</style>
+
+<body>
+      
+    <!-- ------------------------------------------ -->
+   <!-- Main Navbar -->
+   <div class="navbar">
+    <span class="toggle-btn" onclick="toggleSideNav()">☰</span>
+    <img class="logo" src="images/poifis1.png" alt="">
+</div>
+
+<!-- Side Navigation -->
+<div id="sideNav" class="side-nav">
+    <div class="lgnae">
+    <img class="logo" src="images/poifis1.png" alt="">
+     <h3 class="srfe">Sorshe</h3>
+    </div>
+      <a class="hdm" href="./index.html">Home</a>
+      <a class="hdm" href="page1.html">Digital Menu</a>
+      <a href="page1.html"><h4 class="listfoodes">Stater</h4></a>
+      <a href="page2.html"><h4 class="listfoodes">Main Course</h4></a>
+      <a href="page3.html"><h4 class="listfoodes">Rice</h4></a>
+      <a href="page4.html"><h4 class="listfoodes">Desserts</h4></a>
+      <a href="page5.html"><h4 class="listfoodes">Combos</h4></a>
+  </div>
+
+<!-- Overlay for clicking outside -->
+<div id="overlay" class="overlay" onclick="closeSideNav()"></div>
+<!-- ------------------------------------------- -->
+
+<div class="image-row">
+    <a href="page1.html">
+        <h4 class="smrdc">Stater</h4>  
+        <img src="gallery/DSC00475.JPG" alt="Image 1" class="menu-image">
+    </a>
+    <a href="page2.html">
+        <h4 class="smrdc">MainCourse</h4>
+        <img src="gallery/DSC00489.JPG" alt="Image 2" class="menu-image">
+    </a>
+    <a href="page3.html">
+        <h4 class="smrdc">Rice</h4>
+        <img src="gallery/basanti.jpg" alt="Image 3" class="menu-image">
+    </a>
+    <a href="page4.html">
+        <h4 class="smrdc">Desserts</h4>
+        <img src="gallery/dsco1.png" alt="Image 4" class="menu-image">
+    </a>
+    <a href="page5.html">
+        <h4 class="smrdc">Combos</h4>
+        <img src="gallery/DSC00464.JPG" alt="Image 5" class="menu-image">
+    </a>
+    <a href="page6.html">
+        <h4 class="smrdc">Beverages</h4>
+        <img src="gallery/DSC00415.JPG" alt="Image 5" class="menu-image">
+    </a>
+</div>
+
+    <div class="faq-container">
+        <h2 class="stat">COMBOS</h2>
+
+        <div class="faq-item">
+            <!-- <div class="faq-header om-wayr">
+              <div class="ita">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                <div class="faq-question siits">STARTER</div>
+              </div>
+                <div class="faq-arrow">&#9662;</div> 
+            </div> -->
+
+                  <div>
+                        <div class="itema">
+                            <div class="iat" >
+                              <!-- <img class="vegi" src="images/nonvegtri.png" alt=""> -->
+                              <p class="fbfnm">Virgin mojito.</p>
+                             </div>
+                             <div>
+                              <Span class="price">  ₹ 189</Span>
+                            </div>
+                        </div>
+                         <!-- <Span class="price">  ₹ 499</Span> -->
+                        <!-- <p class="meteiqt">Shukto, machher matha diye moong dal with jhuri bhaja, sorshe rui, chutney with papad, payesh.</p> -->
+                   </div>
+
+                   <div>
+                    <div class="itema">
+                        <div class="iat" >
+                          <p class="fbfnm">Thandai cucumber</p>
+                         </div>
+                         <div>
+                          <Span class="price">  ₹ 189</Span>
+                        </div>
+                    </div>
+                     <!-- <Span class="price">  ₹ 499</Span> -->
+               </div>
+
+               <div>
+                <div class="itema">
+                    <div class="iat" >
+                    
+                      <p class="fbfnm">Bombay collins</p>
+                     </div>
+                     <div>
+                      <Span class="price">  ₹ 189</Span>
+                    </div>
+                </div>
+                 <!-- <Span class="price">  ₹ 499</Span> -->
+           </div>
+
+           <div>
+            <div class="itema">
+                <div class="iat" >
+                  <p class="fbfnm">Glee chee</p>
+                 </div>
+                 <div>
+                  <Span class="price">  ₹ 189</Span>
+                </div>
+            </div>
+             <!-- <Span class="price">  ₹ 499</Span> -->
+       </div>
+
+           <div>
+            <div class="itema">
+                <div class="iat" >
+                 
+                  <p class="fbfnm">Virgin pinacolada</p>
+                 </div>
+                 <div>
+                  <Span class="price">  ₹ 259</Span>
+                </div>
+            </div>
+             <!-- <Span class="price">  ₹ 499</Span> -->
+       </div>
+
+       <div>
+        <div class="itema">
+            <div class="iat" >
+             
+              <p class="fbfnm">Fruit punch</p>
+             </div>
+             <div>
+              <Span class="price">  ₹ 259</Span>
+            </div>
+        </div>
+         <!-- <Span class="price">  ₹ 499</Span> -->
+   </div>   
+                         
+   <div>
+    <div class="itema">
+        <div class="iat" >
+         
+          <p class="fbfnm">Spicy juleep</p>
+         </div>
+         <div>
+          <Span class="price">  ₹ 239</Span>
+        </div>
+    </div>
+     <!-- <Span class="price">  ₹ 499</Span> -->
+   
+</div>
+
+
+<div>
+    <div class="itema">
+        <div class="iat" >
+          <p class="fbfnm">Mango tango</p>
+         </div>
+         <div>
+          <Span class="price">  ₹ 239</Span>
+        </div>
+    </div>
+     <!-- <Span class="price">  ₹ 499</Span> -->
+  
+</div>
+
+
+<div>
+    <div class="itema">
+        <div class="iat" >
+          <p class="fbfnm">Ross marry</p>
+         </div>
+         <div>
+          <Span class="price">  ₹ 169</Span>
+        </div>
+    </div>
+     <!-- <Span class="price">  ₹ 499</Span> -->
+</div>
+
+<div>
+    <div class="itema">
+        <div class="iat" >
+          <p class="fbfnm">Ocean blue</p>
+         </div>
+         <div>
+          <Span class="price">  ₹ 169</Span>
+        </div>
+    </div>
+     <!-- <Span class="price">  ₹ 499</Span> -->
+</div>
+
+<div>
+    <div class="itema">
+        <div class="iat" >
+          <p class="fbfnm">Masala cola</p>
+         </div>
+         <div>
+          <Span class="price">  ₹ 169</Span>
+        </div>
+    </div>
+     <!-- <Span class="price">  ₹ 499</Span> -->
+</div>
+
+<div>
+    <div class="itema">
+        <div class="iat" >
+          <p class="fbfnm">Fresh lime water/soda</p>
+         </div>
+         <div>
+          <Span class="price">  ₹ 149</Span>
+        </div>
+    </div>
+     <!-- <Span class="price">  ₹ 499</Span> -->
+</div>
+
+<div></div>
+    <div class="itema">
+        <div class="iat" >
+          <p class="fbfnm">Aerated beverages (coke, sprite)</p>
+         </div>
+         <div>
+          <Span class="price">  ₹ 149</Span>
+        </div>
+    </div>
+     <!-- <Span class="price">  ₹ 499</Span> -->
+</div>
+
+            </div>
+        </div>
+    
+    <!-- <div class="faq-container">
+        <h2 class="stat">COMBOS</h2>
+
+         <div class="faq-item">
+            <div class="faq-header om-wayr">
+              <div class="ita">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                <div class="faq-question siits">Combos</div>
+              </div>
+                <div class="faq-arrow">&#9662;</div> 
+            </div>
+
+            <div class="faq-answer">
+                <span class="faq-question">🔴 Rui combo</span> Shukto, machher matha diye moong dal with jhuri bhaja, sorshe rui, chutney with papad, payesh. <Span class="price">  ₹ 649</Span>
+                <br>
+                <br>
+                <span class="faq-question">🔴 Katla combo</span> Shukto, machher matha diye moong dal with jhuri bhaja, katla kalia, chutney with papad, payesh. <Span class="price">  ₹ 699</Span>
+                <br>
+                <br>
+                <span class="faq-question">🔴 Chicken kosha combo</span> Shukto, machher matha diye moong dal with jhuri bhaja, chicken kosha, chutney with papad, payesh Chicken bhape combo. <Span class="price">  ₹ 749</Span>
+                <br>
+                <br>
+                <span class="faq-question">🔴 Mutton kosha combo</span> Shukto, machher matha diye moong dal with jhuri bhaja, mutton kosha, chutney with papad, payesh Chicken kosha-basanti pulao. <Span class="price">  ₹ 699</Span>
+                <br>
+                <br>
+                <span class="faq-question">🔴 Chicken kosha-basanti pulao</span> Chicken kosha, basanti pulao, chutney with papad, payesh Chicken kosha-luchi combo. <Span class="price">  ₹ 699</Span>
+                <br>
+                <br>
+                <span class="faq-question">🔴 Chicken kosha-basanti pulao</span> Chicken kosha, basanti pulao, chutney with papad, payesh Chicken kosha-luchi combo. <Span class="price">  ₹ 699</Span>
+                <br>
+                <br>
+                <span class="faq-question">🔴 Chicken kosha-basanti pulao</span> Chicken kosha, basanti pulao, chutney with papad, payesh Chicken kosha-luchi combo. <Span class="price">  ₹ 699</Span>
+                <br>
+                <br>
+                <span class="faq-question">🔴 Chicken kosha-basanti pulao</span> Chicken kosha, basanti pulao, chutney with papad, payesh Chicken kosha-luchi combo. <Span class="price">  ₹ 699</Span>
+                <br>
+                <br>
+                <span class="faq-question">🔴 Chicken kosha-basanti pulao</span> Chicken kosha, basanti pulao, chutney with papad, payesh Chicken kosha-luchi combo. <Span class="price">  ₹ 699</Span>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header om-wayr">
+              <div class="ita">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                <div class="faq-question">Fish batter Fry.</div>
+              </div>
+                <div class="faq-arrow">&#9662;</div> 
+            </div>
+            <div class="faq-answer">🔴 FILLET OF FISH DIPPED IN BATTER AND FRIED TO A JUICY INSIDE, CRISPY OUTSIDE FINISH.<Span class="price">  ₹ 499</Span></div>
+        </div>
+        
+    </div> -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const image = item.querySelector('.faq-image');
+        const faqHeader = item.querySelector('.faq-header');
+        const answer = item.querySelector('.faq-answer');
+        const arrow = item.querySelector('.faq-arrow');
+
+        faqHeader.addEventListener('click', () => {
+            const isVisible = answer.style.display === 'block';
+
+            // Hide all other answers and reset arrows
+            document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+            document.querySelectorAll('.faq-arrow').forEach(ar => ar.style.transform = 'rotate(0deg)');
+
+            // Toggle the clicked answer and rotate the arrow
+            if (isVisible) {
+                answer.style.display = 'none';
+                arrow.style.transform = 'rotate(0deg)';
+            } else {
+                answer.style.display = 'block';
+                arrow.style.transform = 'rotate(180deg)';
+            }
+        });
+
+        // Also allow image click to open/close the answer
+        image.addEventListener('click', () => {
+            const isVisible = answer.style.display === 'block';
+
+            // Hide all other answers and reset arrows
+            document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+            document.querySelectorAll('.faq-arrow').forEach(ar => ar.style.transform = 'rotate(0deg)');
+
+            // Toggle the clicked answer and rotate the arrow
+            if (isVisible) {
+                answer.style.display = 'none';
+                arrow.style.transform = 'rotate(0deg)';
+            } else {
+                answer.style.display = 'block';
+                arrow.style.transform = 'rotate(180deg)';
+            }
+        });
+    });
+});
+</script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src="script.js"></script>
+</body>
+</html>
