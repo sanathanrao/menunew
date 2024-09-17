@@ -58,3 +58,21 @@ document.addEventListener('click', function(event) {
     slides[slideIndex - 1].style.display = "block";
   }
   
+  // -------------------
+  // Select all the images
+const images = document.querySelectorAll('.menu-image');
+
+// Add click event listener to each image
+images.forEach(image => {
+    image.addEventListener('click', () => {
+        // Remove highlight and blur from all images
+        images.forEach(img => {
+            img.classList.remove('image-highlight');
+            img.classList.add('image-blur');
+        });
+
+        // Highlight the clicked image and remove blur
+        image.classList.remove('image-blur');
+        image.classList.add('image-highlight');
+    });
+});

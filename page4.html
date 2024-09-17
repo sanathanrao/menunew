@@ -84,6 +84,7 @@
     background-size: 10px;
     width: 15px;
     height: 15px;
+    margin-top: 2px;
 }
 .fbfnm{
     margin-left: 10px;
@@ -127,33 +128,65 @@
 /* Style for the image row */
 .image-row {
     display: flex;
-    /* justify-content: space-between; */
-    margin: 20px auto;
-    max-width: 1200px;
-    overflow-x: hidden; /* Default overflow behavior */
+    justify-content: center; 
+    gap: 10px; /* Adds space between images */
+    overflow-x: hidden; /* No scrolling on larger screens */
+    margin: 20px 0;
+    padding: 10px;
+    max-width: 100%;
+    text-align: center;
 }
-
+.image-row a{
+    text-decoration: none;
+}
+.smrdc{
+    font-family: "Open Sans", sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
 /* Style for each image */
 .menu-image {
-    width: 18%; /* Adjust width for 5 images in a row */
-    height: auto;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    width: 80px; /* Fixed width */
+    height: 80px; /* Fixed height */
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transition for zoom and blur */
+    flex-shrink: 0; /* Prevents image from shrinking */
+    object-fit: cover; /* Ensures images fit within the size without distortion */
 }
 
-.menu-image:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+/* Blur effect for unselected images */
+.image-blur {
+    filter: blur(3px); /* Apply blur to unselected images */
+    opacity: 0.6; /* Make unselected images slightly transparent */
 }
 
-/* Make the row scrollable on smaller screens */
+/* Highlight effect for the selected image */
+.image-highlight {
+    transform: scale(1.2); /* Make the clicked image larger */
+    filter: none; /* Remove any blur from the selected image */
+    opacity: 1; /* Full opacity for selected image */
+}
+
+/* Enable scrolling with small images on small screens */
 @media (max-width: 768px) {
     .image-row {
-        overflow-x: auto; /* Allow horizontal scroll */
-        flex-wrap: nowrap; /* Prevent images from wrapping to the next line */
+        overflow-x: auto; /* Enable horizontal scroll */
+        flex-wrap: nowrap; /* Prevent wrapping of images */
+        scroll-behavior: smooth; /* Smooth scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
     }
 
     .menu-image {
-        width: 40%; /* Increase image width for easier scrolling */
+        width: 80px; /* Fixed width for small screens */
+        height: 80px; /* Fixed height for small screens */
+    }
+}
+@media screen and (max-width: 500px){
+    .image-row{
+        justify-content: flex-start;
     }
 }
 
@@ -187,23 +220,28 @@
 <div id="overlay" class="overlay" onclick="closeSideNav()"></div>
 <!-- ------------------------------------------- -->
 
-    <div class="image-row">
-        <a href="page1.html">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 1" class="menu-image">
-        </a>
-        <a href="page2.html">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcDrg8riFmyr6VcFEGQGQ8fFVJR6h2Uc2Caw&s" alt="Image 2" class="menu-image">
-        </a>
-        <a href="page3.html">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 3" class="menu-image">
-        </a>
-        <a href="page4.html">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcDrg8riFmyr6VcFEGQGQ8fFVJR6h2Uc2Caw&s" alt="Image 4" class="menu-image">
-        </a>
-        <a href="page5.html">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 5" class="menu-image">
-        </a>
-    </div>
+<div class="image-row">
+    <a href="page1.html">
+        <h4 class="smrdc">Stater</h4>  
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 1" class="menu-image">
+    </a>
+    <a href="page2.html">
+        <h4 class="smrdc">MainCourse</h4>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcDrg8riFmyr6VcFEGQGQ8fFVJR6h2Uc2Caw&s" alt="Image 2" class="menu-image">
+    </a>
+    <a href="page3.html">
+        <h4 class="smrdc">Rice</h4>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 3" class="menu-image">
+    </a>
+    <a href="page4.html">
+        <h4 class="smrdc">Desserts</h4>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcDrg8riFmyr6VcFEGQGQ8fFVJR6h2Uc2Caw&s" alt="Image 4" class="menu-image">
+    </a>
+    <a href="page5.html">
+        <h4 class="smrdc">Combos</h4>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 5" class="menu-image">
+    </a>
+</div>
 
 
     <div class="faq-container">
