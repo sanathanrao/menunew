@@ -91,6 +91,8 @@ body {
   color: #000;
   display: block;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
 }
 
 
